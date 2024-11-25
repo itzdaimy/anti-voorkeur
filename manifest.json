@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Anti Voorkeur",
+  "version": "1.0",
+  "description": "Verwijderd Voorkeur",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.thiememeulenhoff.nl/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
