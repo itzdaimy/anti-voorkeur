@@ -2,13 +2,25 @@
   "manifest_version": 3,
   "name": "Anti Voorkeur",
   "version": "1.0",
-  "description": "Verwijderd Voorkeur",
-  "permissions": ["scripting"],
+  "description": "Removes unwanted elements on specific pages.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "icons": {
+    "16": "images/logo.png",
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logo.png",
+      "48": "images/logo.png",
+      "128": "images/logo.png"
+    }
+  },
   "content_scripts": [
     {
       "matches": ["*://*.thiememeulenhoff.nl/*"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
+      "js": ["content.js"]
     }
   ]
 }
