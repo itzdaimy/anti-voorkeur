@@ -19,4 +19,8 @@ function removeElement() {
     console.log(`Removed ${elements.length} element(s) matching '${elementSelector}'`);
 }
 
-window.addEventListener('load', removeElement);
+chrome.storage.sync.get(['elementRemovalEnabled'], function(result) {
+    if (result.elementRemovalEnabled) {
+        window.addEventListener('load', removeElement);
+    }
+});
