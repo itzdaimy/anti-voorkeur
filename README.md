@@ -9,3 +9,5 @@ OF
 2. zet developer mode aan
 3. unzip het .zip bestand (https://github.com/itzdaimy/anti-voorkeur/releases/tag/v1.2)
 4. klik op unpack en selecteer de folder
+
+## discontinued
